@@ -2,9 +2,11 @@ import numpy as np
 import pandas as pd
 from datetime import date, datetime
 import os.path
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Read model evaluation results
-eval_results = pd.read_csv('evaluation/model_eval.csv')
+eval_results = pd.read_csv('evaluation/model_eval.csv', parse_dates=['time_stamp'], dayfirst=True)
 
 last_run = eval_results['time_stamp'].max()
 
