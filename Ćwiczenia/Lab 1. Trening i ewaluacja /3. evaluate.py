@@ -4,6 +4,10 @@ import pickle
 from sklearn.metrics import mean_squared_error, r2_score
 from datetime import date, datetime
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=UserWarning)
+
 # Load model
 model = pickle.load(open("model/model_1.0.pkl", 'rb'))
 

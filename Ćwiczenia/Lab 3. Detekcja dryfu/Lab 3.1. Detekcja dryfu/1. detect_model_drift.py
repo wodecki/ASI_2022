@@ -4,6 +4,10 @@ import pandas as pd
 from datetime import date, datetime
 import os.path
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=UserWarning)
+
 # Read model evaluation results
 eval_results = pd.read_csv('evaluation/model_eval.csv', parse_dates=['time_stamp'], dayfirst=True)
 

@@ -3,6 +3,10 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import pickle
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=UserWarning)
+
 # Read data
 df = pd.read_csv('data/data_train.csv')
 
