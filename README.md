@@ -4,6 +4,7 @@
 Przed uruchomieniem kodów stwórz odpowiednie środowisko `conda`.
 
 1. zainstaluj pakiet `conda`
-2. stwórz środowisko: `$ conda env create -f environment.yml`
-3. aktywuj środowisko: `$ conda activate ASI`
+2. pobierz plik `environment.yml`
+3. stwórz środowisko: `$ conda env create -f environment.yml`
+4. aktywuj środowisko: `$ conda activate ASI`
 
